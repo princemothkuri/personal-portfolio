@@ -1,0 +1,238 @@
+body {
+  font-family: "Arial", sans-serif;
+  color: #333;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.navbar {
+  background-color: #1a1a1a;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 8px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  color: #f8f9fa;
+  text-decoration: none;
+  padding: 15px 20px;
+  display: inline-block;
+  font-size: 28px;
+}
+
+.navbar-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-right: 80px;
+}
+
+.nav-item {
+  margin-left: 15px;
+}
+
+.nav-link {
+  color: #f8f9fa;
+  text-decoration: none;
+  padding: 15px 20px;
+  display: inline-block;
+}
+
+.nav-link:hover {
+  background-color: #333;
+}
+
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://png.pngtree.com/thumb_back/fh260/background/20230706/pngtree-creating-3d-renderings-for-mobile-apps-software-and-web-development-image_3826852.jpg")
+      center center/cover no-repeat;
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.btn-warning {
+  color: #212529;
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+
+.btn-lg {
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+}
+
+.mt-4 {
+  margin-top: 1.5rem !important;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.about-section {
+  padding: 120px 20px;
+  background-color: #f4f4f4;
+}
+
+.about-section img {
+  max-width: 600px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-section img:hover {
+  transform: scale(1.01);
+}
+
+.about-container {
+  display: flex;
+  gap: 20px;
+}
+
+.about-container .about-me {
+  width: 500px;
+  margin-left: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-container .about-me h2 {
+  font-size: 38px;
+}
+
+.projects-section {
+  padding: 80px 20px;
+}
+
+.projects-section .project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project-card {
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 420px;
+}
+
+.project-card:hover {
+  transform: scale(1.01);
+}
+
+.project-card img {
+  width: 100%;
+}
+
+.project-card .card-body {
+  padding: 20px;
+}
+
+.services-section {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.services-section .service-grid {
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.services-section .icon {
+  font-size: 50px;
+  color: #ffc107;
+  margin-bottom: 20px;
+  transition: color 0.3s ease-in-out;
+}
+
+.services-section .icon:hover {
+  color: #f8f9fa;
+}
+
+.services-section .service-item {
+  width: 420px;
+}
+
+.testimonials-section {
+  background-color: #f4f4f4;
+  padding: 100px 60px 100px 60px;
+}
+
+.testimonials-section blockquote {
+  border-left: 5px solid #ffc107;
+  padding-left: 15px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.testimonials-section .testimonial-grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-section {
+  padding: 60px 120px 60px 60px;
+}
+
+.contact-section .contact-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-form {
+  margin-bottom: 20px;
+  width: 400px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.footer {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 20px 20px;
+  text-align: center;
+}
